@@ -76,8 +76,14 @@ The FastAPI app (`main.py`) does the following:
 4. Returns a prediction mapped to a quality label
 
 ### Mapping:
-- White wine: 0 → Zła jakość, 1 → Średnia jakość, 2 → Dobra jakość
-- Red wine: 0 → Zła jakość, 1 → Dobra jakość
+- **White wine**:
+  - 0 → Zła jakość (Low quality)
+  - 1 → Średnia jakość (Medium quality)
+  - 2 → Dobra jakość (High quality)
+
+- **Red wine**:
+  - 0 → Zła jakość (Low quality)
+  - 1 → Dobra jakość (High quality)
 
 ## How to Run Locally
 
