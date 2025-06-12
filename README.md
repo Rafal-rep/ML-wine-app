@@ -1,5 +1,7 @@
 # Wine Quality Prediction App
 
+Live demo: [https://ww-app-d268e1d36d7c.herokuapp.com/]
+
 This project is a complete machine learning pipeline with a web interface for predicting the quality of red and white wines based on their physicochemical properties.
 
 It consists of:
@@ -15,8 +17,6 @@ It consists of:
 - [Modeling](#modeling)
 - [Web Application](#web-application)
 - [How to Run Locally](#how-to-run-locally)
-- [Project Structure](#project-structure)
-- [Author](#author)
 
 ## Overview
 
@@ -83,10 +83,24 @@ The FastAPI app (`main.py`) does the following:
 
 ### Prerequisites
 - Python 3.8+
-- `pip install -r requirements.txt`
+- Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+- If needed, install missing modules manually:
+
+```bash
+pip install scikit-learn fastapi uvicorn joblib numpy jinja2 python-multipart
+```
 
 ### Run the App
 
 ```bash
 cd deployment
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
+```
+
+Then go to `http://127.0.0.1:8000` in your browser to use the app.
+
